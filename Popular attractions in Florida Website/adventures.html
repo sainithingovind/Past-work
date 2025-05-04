@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventures</title>
+    <style>
+        body {
+            background-color: #ffe5b4; /* Light peach background */
+            margin: 0;
+            padding: 0;
+            font-size: 20px; /* Adjust font size */
+            color: #333; /* Adjust font color */
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px; /* Add space between heading and content */
+        }
+
+
+        /* Added styles for the sections */
+        section {
+            width: 100%;
+            display: flex;
+            flex-direction: column; /* Ensure content stacks vertically */
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+	    margin-top: 20px
+            color: black; /* Change text color to black */
+             }
+
+        /* Different background colors for sections */
+        #section1 {
+            background-color: #ffe5b4;
+        }
+
+        #section2 {
+            background-color: #ffe5b4;
+        }
+
+        #section3 {
+            background-color: #ffe5b4;
+        }
+
+        #section4 {
+            background-color: #ffe5b4;
+        }
+
+        /* Adjusted the height of the body to accommodate multiple sections */
+        /* Ensured smooth scrolling behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%; /* Adjust table width as needed */
+            margin-top: 20px; /* Add space between table and section content */
+            background-color: #ffffff; /* Change background color of sections to white */
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+            color: black; /* Change text color to black */
+        }
+
+        th {
+            background-color: #007bff; /* Header background color */
+            color: white;
+        }
+
+        .graph-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+            .graph-container img {
+                max-width: 45%; /* Adjust the width of each graph */
+                margin: 10px; /* Add spacing between the graphs */
+            }
+
+        .form-container {
+            width: 80%;
+            max-width: 600px; /* Set maximum width for form container */
+            margin-top: 20px; /* Add space between form and section content */
+            padding: 20px;
+            background-color: #ffffff; /* Set background color for form container */
+            border-radius: 10px; /* Add border radius for rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+            box-sizing: border-box; /* Ensure padding is included in width calculation */
+        }
+
+            .form-container h2 {
+                text-align: center; /* Center align heading */
+                margin-bottom: 20px; /* Add space below heading */
+            }
+
+        .form-group {
+            margin-bottom: 20px; /* Add space between form groups */
+        }
+
+            .form-group label {
+                font-weight: bold; /* Make labels bold */
+                display: block; /* Ensure labels are on their own line */
+                margin-bottom: 5px; /* Add space below labels */
+            }
+
+            .form-group input,
+            .form-group select {
+                width: 100%; /* Set input fields to fill container width */
+                padding: 8px; /* Add padding to input fields */
+                border-radius: 5px; /* Add border radius for rounded corners */
+                border: 1px solid #ccc; /* Add border for visual clarity */
+                box-sizing: border-box; /* Ensure padding is included in width calculation */
+            }
+
+            .form-group select {
+                appearance: none; /* Remove default select styling */
+            }
+
+            .form-group button {
+                width: 100%; /* Set button to fill container width */
+                padding: 10px; /* Add padding to button */
+                background-color: #007bff; /* Set button background color */
+                color: #fff; /* Set button text color */
+                border: none; /* Remove button border */
+                border-radius: 5px; /* Add border radius for rounded corners */
+                cursor: pointer; /* Add cursor pointer on hover */
+                box-sizing: border-box; /* Ensure padding is included in width calculation */
+            }
+
+                .form-group button:hover {
+                    background-color: #0056b3; /* Darken button background color on hover */
+                }
+
+        .success-message {
+            margin-top: 20px; /* Add space above success message */
+            text-align: center; /* Center align success message */
+            color: #007bff; /* Set success message text color */
+        }
+
+    </style>
+    <!-- Link to your CSS files and other head content here -->
+</head>
+<body>
+    <h1>Adventure Parks</h1>
+
+    <!-- Introduction Section -->
+    <section id="introduction">
+        <p>
+            Amusement and theme parks industry in the U.S.
+            The amusement and theme parks industry in the U.S. has been steadily increasing in size since 2012. This can be seen from the growing number of businesses in the amusement park sector in the United States , with the figure reaching 536 in 2020, up from 461 a decade before. Similarly, the industry revenue of amusement and theme parks in the U.S. is expected to rise to 21.6 billion U.S. dollars by 2024, up from 14.7 billion U.S. dollars ten years prior. Despite the sharp decline in visitors to theme parks globally as a result of the coronavirus (COVID-19) pandemic, Magic Kingdom maintained its status at the top of the leading amusement and theme parks worldwide , recording almost seven million attendees in total and roughly 1.5 million guests more than second-placed Shanghai Disneyland in China.
+        </p>
+    </section>
+
+    <!-- Sections -->
+    <section id="section1">
+        <h2>Popular Theme Parks in Florida [2019-2022 (in millions)]</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Theme Park</th>
+                    <th>2019</th>
+                    <th>2020</th>
+                    <th>2021</th>
+                    <th>2022</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Magic Kingdom</td>
+                    <td>20.96</td>
+                    <td>6.94</td>
+                    <td>12.69</td>
+                    <td>17.13</td>
+                </tr>
+                <tr>
+                    <td>Disney's Hollywood Studios'</td>
+                    <td>11.48</td>
+                    <td>3.68</td>
+                    <td>8.59</td>
+                    <td>10.9</td>
+                </tr>
+                <tr>
+                    <td>Epcot</td>
+                    <td>12.44</td>
+                    <td>4.04</td>
+                    <td>7.75</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Disney's Animal Kingdom</td>
+                    <td>13.89</td>
+                    <td>4.17</td>
+                    <td>7.19</td>
+                    <td>9.03</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="section2">
+        Popular Water Parks
+        <div class="table-container">
+            <h2>
+                Popular Water Parks in Florida from 2019 to 2022 (in millions)
+            </h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Water Park</th>
+                        <th>2019</th>
+                        <th>2020</th>
+                        <th>2021</th>
+                        <th>2022</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Typhoon Lagoon, Orlando</td>
+                        <td>2.25</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>1.92</td>
+                    </tr>
+                    <tr>
+                        <td>Universal's Volcano Bay, Orlando</td>
+                        <td>1.18</td>
+                        <td>0.55</td>
+                        <td>1.69</td>
+                        <td>1.85</td>
+                    </tr>
+                    <tr>
+                        <td>Aquatica, Orlando</td>
+                        <td>1.53</td>
+                        <td>0.53</td>
+                        <td>1.15</td>
+                        <td>1.55</td>
+                    </tr>
+                    <tr>
+                        <td>Adventure Island, Tampa</td>
+                        <td>0.66</td>
+                        <td>0.13</td>
+                        <td>0.59</td>
+                        <td>0.64</td>
+                    </tr>
+                    <tr>
+                        <td>Blizzard Beach, Orlando</td>
+                        <td>1.98</td>
+                        <td>0.32</td>
+                        <td>1.20</td>
+                        <td>0.10</td>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="section3">
+        <h2>Visitor Trends</h2>
+        <div class="graph-container">
+            <img src="DWMK-Park.jpg" alt="Graph 1: Visitor trend at Disney World Magic Kingdom">
+            <img src="USOT-Park.jpg" alt="Visitor trend at Universal Studios Orlando Theme Park">
+            <img src="SW-Park.jpg" alt="Visitor trend in SeaWorld">
+            <img src="LL-Park.jpg" alt="Visitor trend at LegoLand">
+        </div>
+    </section>
+
+
+    <section id="section4">
+        Suggestions
+        <div class="form-container">
+            <h2>Feedback Form</h2>
+            <form id="feedback-form">
+                <div class="form-group">
+                    <label for="attraction-name">Name of Attraction:</label>
+                    <input type="text" id="attraction-name" name="attraction-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="city-name">Name of City:</label>
+                    <input type="text" id="city-name" name="city-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="park-type">Type of Park:</label>
+                    <select id="park-type" name="park-type" required>
+                        <option value="">Select One</option>
+                        <option value="Adventure Park">Adventure Park</option>
+                        <option value="Water Park">Water Park</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+            <p id="success-message" class="success-message" style="display: none;">We have received your suggestion. Thank you!</p>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById("feedback-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent default form submission behavior
+            document.getElementById("success-message").style.display = "block"; // Display the success message
+            // You can add additional code here to handle form submission, such as sending data to a server
+        });
+    </script>
+    <!-- Content about beaches goes here -->
+    <!-- Include navigation to go back to the main page or to other categories -->
+</body>
+</html>

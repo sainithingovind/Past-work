@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cities in Florida</title>
+<style>
+  /* Base styles that apply to all devices */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Media queries for Tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+/* Media queries for Desktop */
+@media (min-width: 1025px) {
+    .container {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 600px) {
+    .responsive-table {
+        overflow-x: auto; /* Enables horizontal scrolling on small devices */
+    }
+}
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #FBEEE6;
+  }
+  h1 {
+    color: #1B2631; /* Set the color of the H1 title */
+    text-align: center; /* Center-align the H1 title */
+    font-size: 36px; /* Set the size of the H1 title */
+    margin-bottom: 20px; /* Add some space below the H1 title */
+  }
+  h2 {
+    color: #333333; /* Set the color of the H1 title */
+    text-align: left; /* Center-align the H1 title */
+    font-size: 25px; /* Set the size of the H1 title */
+    margin-top: 35px; /* Add some space below the H1 title */
+  }
+
+  p {
+    color: #333333; /* Set the color of the paragraph text */
+    line-height: 1.5; /* Set the line height for the paragraph for readability */
+    margin-bottom: 20px; /* Add some space below the paragraph */
+    text-align: justify; /* Justify the paragraph text */
+    max-width: auto; /* Set a max width for the paragraph for better readability */
+    margin-left: 5px; /* These two lines center the paragraph */
+    margin-right: 5px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0px; /* Add some space above the table */
+  }
+  table, th, td {
+    border: 1px solid #ddd; /* Add a border to the table, th, and td elements */
+    padding: 8px; /* Add some padding inside table cells */
+  }
+  th {
+    background-color: #E8F8F5; /* Set a background color for the table header */
+    text-align: center; /* Align the text to the left in table headers */
+  }
+  td {
+    background-color: #EBF5FB; /* Set a background color for the table header */
+    text-align: center; /* Align the text to the left in table headers */
+  }
+
+   .chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+  .chart {
+    margin: 2px;
+  }
+
+  .image-style {
+    width: auto;
+    height: 500px;
+    border: 0.5px solid #000;
+    display: block; /* To display image as block-level element */
+    margin-top: 30px; /* To center the image if its container is wider */
+   }
+</style>
+</head>
+<body>
+
+<h1>Cities in Florida</h1>
+<p>Florida is home to many vibrant cities, each with its own unique character and attractions. From the bustling streets of Miami to the historical charm of St. Augustine, the Sunshine State offers a diverse array of urban experiences. Whether you're looking for the thrills of theme parks, the relaxation of beach towns, or the culture of art-centric locales, Florida's cities have something to offer for every type of traveler.</p>
+
+
+<h2>Average Monthly rent in cities of Florida</h2>
+<p>The below table shows the average rent prices for various cities in Florida for Q3 2022, indicating that Miami has the highest rent at $4,055, while Jacksonville is the most affordable at $1,858. Fort Myers and Fort Lauderdale are on the higher end, with rents above $3,000, whereas cities like Tampa, Orlando, and St. Petersburg fall in the mid-range around $2,200 to $2,657. The lower end features Tallahassee at $1,626 and Port St. Lucie at $1,953, offering more budget-friendly options. </p>
+
+<table border="1" class="responsive-table">
+    <tr>
+        <th>City</th>
+        <th>Monthly Average Expense/Rent</th>
+    </tr>
+    <tr>
+        <td>Fort Myers</td>
+        <td>$3,004</td>
+    </tr>
+    <tr>
+        <td>Jacksonville</td>
+        <td>$1,858</td>
+    </tr>
+    <tr>
+        <td>Miami</td>
+        <td>$4,055</td>
+    </tr>
+    <tr>
+        <td>Tampa</td>
+        <td>$2,565</td>
+    </tr>
+    <tr>
+        <td>Orlando</td>
+        <td>$2,361</td>
+    </tr>
+    <tr>
+        <td>St. Petersburg</td>
+        <td>$2,200</td>
+    </tr>
+    <tr>
+        <td>Hialeah</td>
+        <td>$2,058</td>
+    </tr>
+    <tr>
+        <td>Port St. Lucie</td>
+        <td>$1,953</td>
+    </tr>
+    <tr>
+        <td>Tallahassee</td>
+        <td>$1,626</td>
+    </tr>
+    <tr>
+        <td>Cape Coral</td>
+        <td>$2,065</td>
+    </tr>
+    <tr>
+        <td>Fort Lauderdale</td>
+        <td>$2,657</td>
+    </tr>
+</table>
+
+<div class="chart-container">
+  <div class="chart">
+    <img src="chart1Cities.png" alt="Descriptive text about the image" class="image-style">
+  </div>
+  <div class="chart">
+ <img src="chart2Cities.png" alt="Descriptive text about the image" class="image-style">
+  </div>
+</div>
+
+<p>The initial pie chart, titled "Population Distribution among Cities," displays the population ratios of various cities. With 28.4%, Jacksonville claims the highest percentage, indicating it's the most populated of the listed cities. Following behind are Miami with 13.2%, Tampa with 11.5%, and Orlando with 9.2%. Lesser proportions of the population are represented by cities such as St. Petersburg, Hialeah, Port St. Lucie, Tallahassee, Cape Coral, and Fort Lauderdale, with their shares ranging from 5.5% to 7.7%. </p>
+<p>In contrast, the second pie chart, "Land Area Distribution among Cities in Florida," shifts the focus to the spatial footprint of the cities. Here, Jacksonville stands out with an overwhelming 51.5% of the land area, underlining its expansive physical extent in comparison to its urban counterparts. The other cities possess markedly less land area, with Cape Coral at 7.9% and Tampa trailing behind, amongst others, which suggests that Jacksonville's land scale is significantly larger than what its population size would imply. </p>
+<p>Collectively, the visualizations offer a comparative analysis of the distribution of populations and land areas among Florida's key cities, drawing attention to notable disparities such as Jacksonville's considerable dimensions both in populace and terrain, as opposed to the more equitable population spread observed in the remaining cities. </p>
+
+<table>
+  <table border="1" class="responsive-table">
+  <table id="citiesTable">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Population Rank</th>
+      <th>City Name</th>
+      <th>County</th>
+      <th>Population</th>
+      <th>Land area(sq.miles)</th>
+      <th>Land area(sq.kms)</th>
+      <th>Government</th>
+      <th>Label</th>
+      <th>Year Incorporated</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Jacksonville</td>
+      <td>Duval</td>
+      <td>949,611</td>
+      <td>747.3 sq mi</td>
+      <td>1,935.5 km2</td>
+      <td>Mayor–council</td>
+      <td>City</td>
+      <td>1832</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Miami</td>
+      <td>Miami-Dade</td>
+      <td>442,241</td>
+      <td>36.0 sq mi</td>
+      <td>93.2 km2</td>
+      <td>Mayor–commission</td>
+      <td>City</td>
+      <td>1896</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Tampa</td>
+      <td>Hillsborough</td>
+      <td>384,959</td>
+      <td>114.0 sq mi</td>
+      <td>295.3 km2</td>
+      <td>Mayor–council</td>
+      <td>City</td>
+      <td>1855</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Orlando</td>
+      <td>Orange</td>
+      <td>307,573</td>
+      <td>110.6 sq mi</td>
+      <td>286.5 km2</td>
+      <td>Mayor–council</td>
+      <td>City</td>
+      <td>1875</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>St. Petersburg</td>
+      <td>Pinellas</td>
+      <td>258,308</td>
+      <td>61.8 sq mi</td>
+      <td>160.1 km2</td>
+      <td>Mayor–commission</td>
+      <td>City</td>
+      <td>1903</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Hialeah</td>
+      <td>Miami-Dade</td>
+      <td>223,109</td>
+      <td>21.6 sq mi</td>
+      <td>55.9 km2</td>
+      <td>Mayor–council</td>
+      <td>City</td>
+      <td>1925</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Port St. Lucie</td>
+      <td>St. Lucie</td>
+      <td>204,851</td>
+      <td>119.2 sq mi</td>
+      <td>308.8 km2</td>
+      <td>Council–manager</td>
+      <td>City</td>
+      <td>1961</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Tallahassee</td>
+      <td>Leon</td>
+      <td>196,169</td>
+      <td>100.9 sq mi</td>
+      <td>261.4 km2</td>
+      <td>Commission–manager</td>
+      <td>City</td>
+      <td>1825</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Cape Coral</td>
+      <td>Lee</td>
+      <td>194,016</td>
+      <td>106.0 sq mi</td>
+      <td>274.6 km2</td>
+      <td>Council–manager</td>
+      <td>City</td>
+      <td>1970</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Fort Lauderdale</td>
+      <td>Broward</td>
+      <td>182,760</td>
+      <td>34.6 sq mi</td>
+      <td>89.6 km2</td>
+      <td>Commission–manager</td>
+      <td>City</td>
+      <td>1911</td>
+    </tr>
+    </tbody>
+</table>
+
+<h2>Add New City</h2>
+<form id="addCityForm">
+  <input type="number" id="populationRank" placeholder="Population Rank">
+  <input type="text" id="cityName" placeholder="City Name" required>
+  <input type="text" id="county" placeholder="County">
+  <input type="number" id="population" placeholder="Population">
+  <input type="text" id="landAreaSqMi" placeholder="Land area (sq.mi)">
+  <input type="text" id="landAreaSqKm" placeholder="Land area (sq.km)">
+  <input type="text" id="government" placeholder="Government">
+  <input type="text" id="label" placeholder="Label">
+  <input type="number" id="yearIncorporated" placeholder="Year Incorporated">
+  <button type="submit">Add City</button>
+</form>
+
+<script>
+// Function to create an editable text cell in the table
+function createEditableCell(value) {
+  var cell = document.createElement('td');
+  var input = document.createElement('input');
+  input.value = value;
+  cell.appendChild(input);
+  return cell;
+}
+
+// Function to add row to the table
+function addRowToTable(data) {
+  var table = document.getElementById('citiesTable').getElementsByTagName('tbody')[0];
+  var newRow = table.insertRow();
+  data.forEach(function(text) {
+    var cell = createEditableCell(text);
+    newRow.appendChild(cell);
+  });
+
+  // Add action buttons to the row
+  var actionCell = newRow.insertCell();
+  var editBtn = document.createElement('button');
+  editBtn.textContent = 'Edit';
+  var saveBtn = document.createElement('button');
+  saveBtn.textContent = 'Save';
+  saveBtn.style.display = 'none'; // Hide save button by default
+  var deleteBtn = document.createElement('button');
+  deleteBtn.textContent = 'Delete';
+
+  actionCell.appendChild(editBtn);
+  actionCell.appendChild(saveBtn);
+  actionCell.appendChild(deleteBtn);
+
+  // Add event listeners for the buttons
+  editBtn.addEventListener('click', function() {
+    newRow.querySelectorAll('input').forEach(function(input) {
+      input.disabled = false;
+    });
+    editBtn.style.display = 'none';
+    saveBtn.style.display = '';
+  });
+
+  saveBtn.addEventListener('click', function() {
+    newRow.querySelectorAll('input').forEach(function(input) {
+      input.disabled = true;
+    });
+    editBtn.style.display = '';
+    saveBtn.style.display = 'none';
+  });
+
+  deleteBtn.addEventListener('click', function() {
+    table.deleteRow(newRow.rowIndex - 1);
+  });
+}
+
+document.getElementById('addCityForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  // Collect the values from each input field
+  var data = [
+    document.getElementById('populationRank').value,
+    document.getElementById('cityName').value,
+    document.getElementById('county').value,
+    document.getElementById('population').value,
+    document.getElementById('landAreaSqMi').value,
+    document.getElementById('landAreaSqKm').value,
+    document.getElementById('government').value,
+    document.getElementById('label').value,
+    document.getElementById('yearIncorporated').value,
+  ];
+
+  // Add the collected data as a new row in the table
+  addRowToTable(data);
+
+  // Clear the input fields after adding the row
+  document.getElementById('addCityForm').reset();
+});
+</script>
+
+</body>
+</html>
